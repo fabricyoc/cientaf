@@ -4,116 +4,483 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CIENTAF 2025 - Feira de Ciências</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description"
+    content="CIENTAF 2026 - Feira de Ciências, Empreendedorismo e Tecnologia da Escola Estadual Aristófanes Fernandes. Dias 22 e 23 de outubro de 2026.">
+  <meta name="theme-color" content="#061a44">
+  <title>CIENTAF 2026 | Feira de Ciências</title>
   <link rel="shortcut icon" href="./src/logo-cientaf.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <img src="./src/logo-cientaf.png" alt="Logo da CIENTAF" class="logo">
-
-    <div class="floating-countdown">
-      <h1>Save the Date!</h1>
-      <div class="timer">
-        <div class="block days">
-          <span id="days">00</span>
-          <small>dias</small>
-        </div>
-        <div class="block hours">
-          <span id="hours">00</span>
-          <small>horas</small>
-        </div>
-        <div class="block minutes">
-          <span id="minutes">00</span>
-          <small>minutos</small>
-        </div>
-        <div class="block seconds">
-          <span id="seconds">00</span>
-          <small>segundos</small>
-        </div>
-      </div>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#inicio" class="brand">
+        <img src="./src/logo-cientaf.png" alt="Logo CIENTAF 2026">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#programacao">Programação</a>
+        <a href="#local">Local</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <nav id="nav">
-      <a href="#sobre">Sobre</a>
-      <a href="#programacao">Programação</a>
-      <a href="#local">Local</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#contato">Contato</a>
-    </nav>
   </header>
 
-  <main class="container">
-    <section id="sobre">
-      <h2>Sobre a Feira</h2>
-      <p>
-        A <b>CIENTAF</b> é a Feira de Ciências, Empreendedorismo e Tecnologia da Escola Estadual Aristófanes Fernandes,
-        em São Vicente/RN. Realizada nos dias <b>11 e 12 de setembro de 2025</b>, a feira reunirá projetos inovadores,
-        oficinas e atividades interativas, promovendo a integração entre ciência, tecnologia e criatividade. O evento é
-        aberto à comunidade e busca despertar o interesse pelo conhecimento científico e pelo espírito empreendedor.
-      </p>
-    </section>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-background"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span></span>
+            CIENTAF 2026
+          </div>
+          <h1>
+            Feira de
+            <strong>Ciências</strong>
+          </h1>
+          <p class="hero-subtitle">
+            Ideias que transformam o presente
+            e constroem o futuro.
+          </p>
+          <p class="hero-text">
+            Uma experiência de ciência, tecnologia, criatividade
+            e inovação produzida pelos nossos estudantes.
+          </p>
+          <div class="hero-actions">
+            <a href="#programacao" class="btn btn-primary">
+              Ver programação
+              <span>→</span>
+            </a>
+          </div>
+        </div>
 
-    <section id="programacao">
-      <h2>Programação</h2>
-      <div class="dia">
-        <h3>Dia 11/09</h3>
-        <p>Abertura <span>*</span></p>
-        <p>A partir das 18h30</p>
+        <div class="hero-logo">
+          <div class="logo-glow"></div>
+          <img src="./src/logo-cientaf.png" alt="CIENTAF 2026">
+        </div>
       </div>
-      <div class="dia">
-        <h3>Dia 12/09</h3>
-        <p>Apresentações dos trabalhos <span>*</span></p>
-        <p>08h00 às 11h30 | 15h30 às 17h30</p>
+
+      <!-- DATA -->
+      <div class="event-date">
+        <div class="date-icon">
+          📅
+        </div>
+        <div>
+          <small>Reserve esta data</small>
+          <strong>
+            22 e 23 de outubro
+          </strong>
+          <span>
+            2026
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTADOR -->
+    <section class="countdown-section">
+      <div class="countdown-container">
+        <div class="countdown-title">
+          <span class="mini-label">
+            CONTAGEM REGRESSIVA
+          </span>
+          <h2>
+            O conhecimento está chegando.
+          </h2>
+          <p>
+            A CIENTAF 2026 começa em:
+          </p>
+        </div>
+
+        <div class="countdown">
+          <div class="countdown-card">
+            <strong id="days">00</strong>
+            <span>dias</span>
+          </div>
+          <div class="countdown-card">
+            <strong id="hours">00</strong>
+            <span>horas</span>
+          </div>
+          <div class="countdown-card">
+            <strong id="minutes">00</strong>
+            <span>minutos</span>
+          </div>
+          <div class="countdown-card">
+            <strong id="seconds">00</strong>
+            <span>segundos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="section-heading">
+        <span class="mini-label">
+          SOBRE O EVENTO
+        </span>
+        <h2>
+          Ciência que nasce
+          <span>na escola.</span>
+        </h2>
       </div>
 
-      <div class="dia">
-        <p><span>*</span> Evento <b>aberto</b> a comunidade</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            A <strong>CIENTAF</strong> é a Feira de Ciências,
+            Empreendedorismo e Tecnologia da
+            <strong>Escola Estadual Aristófanes Fernandes</strong>,
+            em São Vicente/RN.
+          </p>
+          <p>
+            Em 2026, estudantes apresentam projetos,
+            experiências e ideias que aproximam a ciência
+            do cotidiano e mostram como a criatividade
+            pode transformar a realidade.
+          </p>
+          <p>
+            O evento é aberto à comunidade e representa
+            um espaço de aprendizagem, troca de conhecimentos
+            e valorização do protagonismo estudantil.
+          </p>
+        </div>
+
+        <div class="about-highlights">
+          <div class="highlight">
+            <div class="highlight-icon">🔬</div>
+            <div>
+              <strong>Ciência</strong>
+              <span>Descoberta e investigação</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">💡</div>
+            <div>
+              <strong>Inovação</strong>
+              <span>Ideias para transformar</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">🚀</div>
+            <div>
+              <strong>Tecnologia</strong>
+              <span>Soluções para o futuro</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">🌱</div>
+            <div>
+              <strong>Sustentabilidade</strong>
+              <span>Conhecimento para cuidar</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <p></p>
-      <img src="./src/banner.jpeg" alt="Banner" title="Banner da CIENTAF 2025" id="banner" />
     </section>
 
-    <section id="local">
-      <h2>Local</h2>
-      <h3>Escola Estadual Aristófanes Fernandes</h3>
-      <p>São Vicente/RN</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!4v1756772002181!6m8!1m7!1sUxbywOv8iTr_A8sK7bYD7w!2m2!1d-6.218315669348044!2d-36.68212900486498!3f147.53826243687794!4f-2.482573642318272!5f0.7820865974627469"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- PROGRAMACAO -->
+    <section class="section section-dark" id="programacao">
+      <div class="section-heading center">
+        <span class="mini-label">
+          PROGRAMAÇÃO
+        </span>
+        <h2>
+          Dois dias de
+          <span>conhecimento.</span>
+        </h2>
+        <p>
+          Confira os principais momentos da CIENTAF 2026.
+        </p>
+      </div>
+
+      <div class="schedule">
+        <!-- QUINTA -->
+        <article class="schedule-card">
+          <div class="schedule-top blue">
+            <div>
+              <span>22/10</span>
+              <small>QUINTA-FEIRA</small>
+            </div>
+            <div class="calendar-icon">
+              22
+            </div>
+          </div>
+
+          <div class="schedule-body">
+            <div class="schedule-item">
+              <div class="schedule-time">
+                18h30
+              </div>
+              <div>
+                <h3>Abertura</h3>
+                <p>
+                  Início oficial da CIENTAF 2026.
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-line"></div>
+
+            <div class="schedule-item">
+              <div class="schedule-time">
+                🎭
+              </div>
+              <div>
+                <h3>Apresentações culturais</h3>
+                <p>
+                  Momentos culturais especiais
+                  para celebrar a abertura da feira.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-footer">
+            <span>ABERTURA OFICIAL</span>
+          </div>
+        </article>
+
+        <!-- SEXTA -->
+        <article class="schedule-card">
+          <div class="schedule-top green">
+            <div>
+              <span>23/10</span>
+              <small>SEXTA-FEIRA</small>
+            </div>
+            <div class="calendar-icon">
+              23
+            </div>
+          </div>
+
+          <div class="schedule-body">
+            <div class="schedule-item">
+              <div class="schedule-time">
+                08h30
+              </div>
+              <div>
+                <h3>Início das atividades</h3>
+                <p>
+                  Apresentação e visitação
+                  dos trabalhos dos estudantes.
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-line"></div>
+
+            <div class="schedule-item">
+              <div class="schedule-time">
+                15h00
+              </div>
+              <div>
+                <h3>Encerramento</h3>
+                <p>
+                  Finalização das atividades
+                  da CIENTAF 2026.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-footer green-footer">
+            <span>08H30 — 15H00</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="community">
+        <div class="community-icon">
+          👥
+        </div>
+        <div>
+          <strong>EVENTO ABERTO À COMUNIDADE</strong>
+          <span>
+            Todos estão convidados para participar!
+          </span>
+        </div>
+      </div>
     </section>
 
-    <section id="galeria">
-      <h2>Galeria</h2>
-      <a href="https://drive.google.com/drive/folders/1Athd2nW9_j-f6dLitw3bdLPmZtbRgZcA?usp=sharing" target="_blank"
-        rel="noopener noreferrer" class="btnGaleria">
-        Clique aqui para ver as mídias da CIENTAF 2025
-      </a>
+    <!-- LOCAL -->
+    <section class="section" id="local">
+      <div class="section-heading">
+        <span class="mini-label">
+          ONDE ESTAREMOS
+        </span>
+        <h2>
+          Venha nos
+          <span>visitar.</span>
+        </h2>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info">
+          <div class="location-icon">
+            📍
+          </div>
+          <h3>
+            Escola Estadual
+            Aristófanes Fernandes
+          </h3>
+          <p>
+            São Vicente — Rio Grande do Norte
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Escola+Estadual+Aristófanes+Fernandes+São+Vicente+RN"
+            target="_blank" class="map-button">
+            Abrir no Google Maps →
+          </a>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1756772002181!6m8!1m7!1sUxbywOv8iTr_A8sK7bYD7w!2m2!1d-6.218315669348044!2d-36.68212900486498!3f147.53826243687794!4f-2.482573642318272!5f0.7820865974627469"
+            loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p><strong>Email:</strong> eeaftech@gmail.com
-      </p>
-      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/eeaftech" target="_blank"
-          rel="noopener noreferrer" class="nolink">@eeaftech</a>
-      </p>
+    <!-- SITE / QR -->
+    <section class="official">
+      <div class="official-content">
+        <span class="mini-label">
+          SAIBA MAIS
+        </span>
+        <h2>
+          Acompanhe a
+          <span>CIENTAF 2026.</span>
+        </h2>
+        <p>
+          Acesse o site oficial para acompanhar
+          novidades, informações e atualizações da feira.
+        </p>
+        <a href="https://cientaf.vercel.app/" target="_blank" class="btn btn-primary">
+          Acessar site oficial →
+        </a>
+      </div>
+
+      <div class="qr-container">
+        <div class="qr-card">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fcientaf.vercel.app%2F"
+            alt="QR Code para o site oficial da CIENTAF">
+        </div>
+        <strong>
+          ESCANEIE E SAIBA MAIS
+        </strong>
+        <span>
+          cientaf.vercel.app
+        </span>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section" id="galeria">
+      <div class="section-heading center">
+        <span class="mini-label">
+          MEMÓRIAS
+        </span>
+        <h2>
+          Galeria da
+          <span>CIENTAF.</span>
+        </h2>
+        <p>
+          Confira os registros da edição anterior
+          enquanto aguardamos os novos momentos de 2026.
+        </p>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-icon">
+          📸
+        </div>
+        <div>
+          <h3>
+            CIENTAF 2025
+          </h3>
+          <p>
+            Fotos e mídias da edição anterior.
+          </p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1Athd2nW9_j-f6dLitw3bdLPmZtbRgZcA?usp=sharing" target="_blank"
+          rel="noopener noreferrer" class="gallery-button">
+          Ver galeria →
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+      <div class="contact-container">
+        <div>
+          <span class="mini-label">
+            FALE CONOSCO
+          </span>
+          <h2>
+            Faça parte
+            <span>dessa experiência.</span>
+          </h2>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:eeaftech@gmail.com">
+            <span>✉️</span>
+            <div>
+              <small>EMAIL</small>
+              <strong>eeaftech@gmail.com</strong>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/eeaftech" target="_blank" rel="noopener noreferrer">
+            <span>◎</span>
+            <div>
+              <small>INSTAGRAM</small>
+              <strong>@eeaftech</strong>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 CIENTAF - Todos os direitos reservados.</p>
+    <div class="footer-content">
+      <img src="./src/logo-cientaf.png" alt="CIENTAF 2026">
+      <div>
+        <strong>
+          CIENTAF 2026
+        </strong>
+        <p>
+          Feira de Ciências, Empreendedorismo e Tecnologia
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        © 2026 CIENTAF — Todos os direitos reservados.
+      </span>
+      <span>
+        Escola Estadual Aristófanes Fernandes
+      </span>
+    </div>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 
 </html>
