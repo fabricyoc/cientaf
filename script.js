@@ -49,13 +49,13 @@ document.querySelectorAll(".nav a").forEach(link => {
 =========================
 
    Evento:
-   22 de outubro de 2026
+   21 de outubro de 2026
    às 18h30
 
 ========================= */
 
 const eventDate = new Date(
-  "2026-10-22T18:30:00-03:00"
+  "2026-10-21T18:30:00-03:00"
 ).getTime();
 
 
